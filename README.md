@@ -15,21 +15,21 @@ In Haddock: edit the paths in rescoring_scripts/run_scoring.csh and follow the R
 In VINA: edit the path in VINA/MGLTools-1.5.6/bin/mglenv.sh
 
 ### EXTERNAL INPUT FILES ######
-# Start.pdb 
-# Start.gro and topology files: topol-0.top, topol_Protein_chain_A-0.itp (target topology), topol_Protein_chain_B-0.itp (binder topology) (, solvent-0.itp if organic solvent) 
-# Important: Target = chain A ; Binder = chain B
+- Start.pdb 
+- Start.gro and topology files: topol-0.top, topol_Protein_chain_A-0.itp (target topology), topol_Protein_chain_B-0.itp (binder topology) (, solvent-0.itp if organic solvent) 
+Important: Target = chain A ; Binder = chain B
 Follow the topology templates in the provided examples if you do not know how to configure the gromacs topology files.  
 
-# minimization input files: minim_scmut.mdp, minim_overlap.mdp and minim.mdp, for the minimization of mutants. minim_scmut: minimization of mutated side-chain and the two attached residues using only the binding complex; minim_overlap: minimization of the mutated side chain and the surrounding solvent molecules; minim: global minimization.
+- Minimization input files: minim_scmut.mdp, minim_overlap.mdp and minim.mdp, for the minimization of mutants. minim_scmut: minimization of mutated side-chain and the two attached residues using only the binding complex; minim_overlap: minimization of the mutated side chain and the surrounding solvent molecules; minim: global minimization.
 
-# Input files for NVT and NPT MD simulations: md-NVT.mdp, md-NPT.mdp
+- Input files for NVT and NPT MD simulations: md-NVT.mdp, md-NPT.mdp
 
-# inputs for haddock (optional):
-# scoring0.inp: initial haddock file. Be aware that you must define the type of histidine residues that you have in your system in scoring0.inp. HIE=hise, HID=hisd
-# inpA, inpC: input haddock file prepared by pieces to include new mutations 
+- Inputs for haddock (optional):
+scoring0.inp: initial haddock file. Be aware that you must define the type of histidine residues that you have in your system in scoring0.inp. HIE=hise, HID=hisd
+inpA, inpC: input haddock file prepared by pieces to include new mutations 
 
-# topology file of water molecules where the mass of H is modified to speed up the thermodynamics (optional, not active)
-# tip3p-m.itp
+-topology file of water molecules where the mass of H is modified to speed up the thermodynamics (optional, not active):
+tip3p-m.itp
 
 ##############################
 
