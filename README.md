@@ -10,9 +10,9 @@ GROMACS. A priori, you can use any version of Gromacs since you must define the 
 
 SCWRL4. You can download the program for free at http://dunbrack.fccc.edu/scwrl4/ and install it in the folder scwrl4.
 
-Scoring functions. They are located inside of the sf folder. If you add other scoring functions, they should be located in this folder. Available scoring functions: Irad, Pie*Pisa, Bluues, Haddock, Bach6, FireDock, VINA. Paths of scoring functions that must be configured: Haddock and VINA.
+Scoring functions. They are located inside of the sf folder. If you add other scoring functions, they should be located in this folder. Available scoring functions: Irad, Pie*Pisa, Bluues, Haddock, Bach6, FireDock, AutoDock Vina. Paths of scoring functions that must be configured: Haddock and AutoDock Vina.
 In Haddock: edit the paths in rescoring_scripts/run_scoring.csh and follow the README file in the folder haddock (haddock/haddock2.1/haddock_configure.csh).
-In VINA: edit the path in VINA/MGLTools-1.5.6/bin/mglenv.sh
+In Vina: edit the path in VINA/MGLTools-1.5.6/bin/mglenv.sh
 
 ### EXTERNAL INPUT FILES ######
 - Start.pdb 
